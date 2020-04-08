@@ -2,6 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>core</module>
+        <module>web</module>
+        <module>test</module>
+    </modules>
 
     <groupId>com.springboot.cloud</groupId>
     <artifactId>common</artifactId>
@@ -10,12 +15,6 @@
 
     <name>common</name>
     <description>Demo Common project for Spring Boot</description>
-
-    <modules>
-        <module>core</module>
-        <module>web</module>
-        <module>test</module>
-    </modules>
 
     <dependencies>
         <dependency>
@@ -44,4 +43,12 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -2,26 +2,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>authentication-server</module>
+        <module>authentication-client</module>
+        <module>authorization-server</module>
+    </modules>
 
     <groupId>com.springboot.cloud</groupId>
     <artifactId>auth</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>auth</name>
-    <description>Demo Auth project for Spring Boot</description>
-
     <parent>
         <groupId>com.springboot.cloud</groupId>
         <artifactId>cloud</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
-    <modules>
-        <module>authentication-server</module>
-        <module>authentication-client</module>
-        <module>authorization-server</module>
-    </modules>
+    <name>auth</name>
+    <description>Demo Auth project for Spring Boot</description>
 
     <dependencies>
         <dependency>
